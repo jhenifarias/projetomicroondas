@@ -4,23 +4,31 @@
 // feijão = 12 segundos
 // brigadeiro = 8 segundos
 
-function tempopadrao (tempo){
 
-  switch(tempo) {
-     case 'pipoca':
-    var tempopadrao = 10;
-    break;
-
-     case 'macarrao':
-    var tempopadrao = 8;
-    break;
-
-     case 'carne':
-    var tempopadrao = 15;
-    break;
+function pipoca(valor) {
+  if(valor == 20) {
+    return 'Que pena! Sua comida queimou!\n';
 }
-return(tempopadrao);
+ else if(valor < 10) {
+      return 'Tempo insuficiente\n';
+}
+else if(valor >= 30) {
+    return 'Kabumm!\n';
+}
+else if(valor = 10) {
+    return 'Prato pronto, tenha um bom apetite!!!\n';
+}
 }
 
-console.log('pipoca');
+console.log(pipoca(9));
+
+
+
+
+
+
+
+
+
+
 
